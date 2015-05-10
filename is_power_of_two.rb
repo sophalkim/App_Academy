@@ -1,4 +1,7 @@
 def is_power_of_two?(num)
+	if (num == 0) 
+		return false
+	end
 	i = 1
 	while (i <= num)
 		if (i * i == num)
