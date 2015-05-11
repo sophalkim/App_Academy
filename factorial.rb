@@ -1,11 +1,8 @@
 def factorial(n)
-	sum = 0
-	i = 1
-	while (i < n)
-		sum = sum * (n - i)
-		i = i + 1
+	if (n < 1)
+		return 1
 	end
-	return sum
+	return n * factorial(n - 1)
 end
 
 puts(
