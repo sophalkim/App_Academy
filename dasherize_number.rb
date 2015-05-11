@@ -9,7 +9,13 @@ def dasherize_number(num)
 				result = result + str[i] + "-"
 			end
 			if (i != 0)
-				result = result + "-" + str[i]
+				if (str[i - 1] != str[i])
+					result = result + "-" + str[i]
+				else
+					if (i == len - 1)
+						result = result + str[i]
+					end
+				end
 			end
 		else
 			result += str[i]
